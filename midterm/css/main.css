@@ -1,0 +1,161 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b1e5ef;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: azure;
+    max-width: 930px; /* Adjust the max-width as per your design */
+    margin: 0 auto;   /* Center the container */
+}
+
+/* Positioning the title on top of the image */
+header {
+    position: relative;
+    text-align: center;
+    z-index: auto;
+    width: 930px;
+    background-color:azure ;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    border-right: 1px solid grey;
+    text-align: center;
+  }
+  
+  
+  nav li:last-child { /* Remove border for the last item */
+    border-right: none; 
+  }
+  
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+}
+
+/* wrapping text around the image */
+.clearfix img {
+    width: 250px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+
+.container p {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.learning {
+    margin: 20px;
+}
+
+.learning h2 {
+    font-size: 1.5em;
+} 
+
+h2 {
+    margin-left: 5px; 
+  }
+
+h3 {
+    margin-left: 5px; 
+  }
+
+  /* Styling the fact listing */
+.learning ul {
+    list-style-type: disc;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.learning li {
+    margin-bottom: 5px;
+}
+
+/* Form Styling */
+
+.form {
+    background-color: azure;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px; 
+}
+
+/* Form Submit button */
+.form input[type="submit"] {
+    width: 7%;
+    margin: 5px;
+    background-color: azure;
+    border-color: black;
+
+}
+
+/* Form Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-group label {
+    margin-right: 5px;  
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    width: 5px; /* Adjust the size as needed */
+    height: 5px;
+    margin-right: 10px;
+    margin-top: 15px;
+
+  } 
+
+
+input, textarea {
+    width: 850px;
+    padding: 5px;
+    box-sizing: content-box;
+    border: 1px solid gainsboro;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* Footer alighnment */
+footer {
+    text-align: right;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+
