@@ -1,0 +1,397 @@
+body {
+  max-width: 1200px; /* Set the maximum width of the body to 1200px */
+  margin: 0 auto; /* Center the body horizontally */
+  font-family: 'Open Sans', sans-serif; /* Use Open Sans font for the body */
+}
+
+/* Styles for screen sizes of 760px and above */
+@media screen and (min-width: 760px) {
+  /* CSS rules for screen sizes of 760px and above go here */
+  /* For example: */
+  body {
+      /* Example styles for body at 760px and above */
+      font-size: 16px;
+  }
+
+  .container {
+      /* Example styles for container at 760px and above */
+      max-width: 1200px;
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #222;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  height: 50px;
+}
+.logo {
+  width: 60px;
+  height: auto;
+  margin-left: 60px;
+}
+.navLinks {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks a {
+  position: relative; /* Ensure the button is a positioned element */
+  color: #c78c06; /* Background color */
+  padding: 10px;
+  border: none; 
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  text-decoration: none; /* Remove the underline from nav links */
+}
+
+.navLinks a:hover {
+  background-color: #a17101; /* Change background color on hover */
+  color: #222;
+}
+
+.searchbox {
+  display: flex;
+  margin-right: 60px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.search {
+  height: 30px;
+}
+.icon {
+  width: 25px;
+  height: 18px;
+  fill: #c78c06;
+  background-color: #222;
+  box-shadow: 0.2px 0.2px 0.2px 0.6px #222;
+  border: 1px solid #c78c06; 
+  padding: 5px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bannerContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  padding: 50px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.bannerContainer h1 {
+  font-size: 60px;
+  word-spacing: 15px;
+}
+.bannerContainer p {
+  padding-top: 10px;  
+  padding-bottom: 15px;
+}
+.bannerContainer .connect-button {
+  position: relative; /* Ensure the button is a positioned element */
+  background-color: #c78c06; /* Background color */
+  color: rgb(0, 0, 0); /* Text color */
+  padding: 10px 40px 10px 20px; /* Adjust padding for the triangle */
+  border: none; /* Remove border */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+}
+
+.bannerContainer .connect-button:hover {
+  background-color: #a17101; /* Change background color on hover */
+}
+
+.bannerContainer .connect-button::after {
+  content: ""; /* Create a pseudo-element */
+  position: absolute; /* Position the pseudo-element */
+  top: 30%; /* Position vertically at the middle */
+  right: 15px; /* Position horizontally */
+  width: 0; 
+  height: 0;
+  border-top: 8px solid transparent; /* Create the triangle */
+  border-bottom: 8px solid transparent; /* Create the triangle */
+  border-left: 8px solid rgb(0, 0, 0); /* Create the triangle */
+}
+
+.forabout {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffe6ac;
+}
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.aboutContainer img {
+  width: 50%;
+  height: auto;
+}
+.aboutcontent {
+  flex: 1;
+  padding-left: 20px;
+  position: relative;
+  top: -20px;
+}
+.aboutcontent h1 {
+  font-size: 30px;
+} 
+.aboutcontent  p {
+  padding-top: 10px;  
+  padding-bottom: 15px;
+  padding-right: 50px;
+}
+
+.forServices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px; /* Gap between grid items */
+  position: relative; /* Make the container a positioned element */
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.service1, .service2 {
+  grid-row: 1; /* Place service1 and service2 in the first row */ 
+  background-color: #ffe6ac;
+  padding: 40px;
+}
+
+.service3, .service4, .service5 {
+  grid-row: 2; /* Place service3, service4, and service5 in the second row */
+  background-color: #ffe6ac;
+  padding: 40px;
+}
+
+.digital-button, .marketing-button, .video-button, .web-button, .print-button {
+  color: #fff;
+  width: 90%;
+  margin-bottom: 15px;
+  position: relative; /* Ensure the button is a positioned element */
+  background-color: #222; /* Background color */
+  padding: 10px 40px 10px 20px;
+
+border: none; /* Remove border */
+font-size: 16px; /* Font size */
+cursor: pointer; /* Cursor style */
+}
+.forServices button::after {
+  content: ""; /* Create a pseudo-element */
+  position: absolute; /* Position the pseudo-element */
+  top: 30%; /* Position vertically at the middle */
+  right: 85px; /* Position horizontally */
+  width: 0; 
+  height: 0;
+  border-top: 8px solid transparent; /* Create the triangle */
+  border-bottom: 8px solid transparent; /* Create the triangle */
+  border-left: 8px solid rgb(255, 255, 255); /* Create the triangle */
+}
+
+  .service1 .serviceimg,
+  .service2 .serviceimg,
+  .service3 .serviceimg,
+  .service4 .serviceimg,
+  .service5 .serviceimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .forServices .serviceContent {
+    padding: 15px;
+  }
+
+  .forServices h1 {
+    font-size: 30px;
+    padding-left: 40px;
+    position: absolute; /* Position the h1 element absolutely */
+    top: 50px; /* Position it at the top */
+    left: 50px; /* Position it at the left */
+} 
+
+  .forVision {
+    position: relative;
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 40px;
+  }
+
+  .forVision .vision-button {
+    position: relative; /* Ensure the button is a positioned element */
+    background-color: #222; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 40px 10px 20px; /* Adjust padding for the triangle */
+    border: none; /* Remove border */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+  }
+
+  .forVision .vision-button::after {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    top: 30%; /* Position vertically at the middle */
+    right: 15px; /* Position horizontally */
+    width: 0; 
+    height: 0;
+    border-top: 8px solid transparent; /* Create the triangle */
+    border-bottom: 8px solid transparent; /* Create the triangle */
+    border-left: 8px solid #fff; /* Create the triangle */
+  }
+
+  .forVision  p {
+    padding-top: 10px;  
+    padding-bottom: 15px;
+    padding-right: 50px;
+}
+
+.forVision h1 {
+  font-size: 30px;
+} 
+  .forVision .Posterimg {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  .visionContainer {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 70%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .forTeam {
+    padding: 100px;
+    margin-top: -350px;
+  }
+  .forTeam h1 {
+    font-size: 30px;
+  }
+  .forTeam h2 {
+    font-size: 20px;
+  }
+  .forTeam h4 {
+    font-size: 15px;
+  }
+  .member1,
+  .member2 {
+    display: flex;
+    background-color: #ffe6ac;
+  }
+  .member1 img,
+  .member2 img {
+    width: 60%;
+  }
+  .forTeam .memberInfo {
+    padding: 10px;
+  }
+  hr {
+    border: 2px solid #c78c06;
+    margin-top: 10px;
+  }
+  .forContact {
+    padding: 100px;
+    margin-top: -160px;
+    display: flex; /* Add flex display to arrange items in a row */
+    justify-content: space-between; /* Add space between the items */
+}
+
+.contactContainer {
+    flex: 1; /* Make the contact container flexible to occupy remaining space */
+    display: flex;
+    flex-direction: column; /* Stack items vertically inside contact container */
+}
+
+.contactContainer .map {
+    width: 100%;
+}
+
+.forContact .contactContainer,
+.forContact .location {
+    flex: 1; /* Make message and location containers flexible to occupy equal space */
+}
+
+.forContact h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #c68c02;
+  }
+
+  input[type="submit"] {
+    background-color: #3f0130;
+    color: #c68c02;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+  }
+
+  .forHours {
+    margin-top: 230px;
+  }
+  .forHours h1 {
+    padding-left: 100px;
+  }
+  .forHours table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 85%;
+    border: #4c4c4c;
+    border-bottom: 2px solid black;
+  }
+
+  .forHours th,
+  .forHours td {
+    text-align: center;
+    padding: 8px;
+  }
+  .forHours th {
+    background-color: #fad889;
+    border: 1px solid rgb(235, 233, 233);
+    border-bottom: 2px solid black;
+  }
+  .forHours td {
+    border: 1px solid rgb(235, 233, 233);
+  }
+  footer {
+    margin-top: 20px;
+    background-color: #3f0130;
+    color: #c68c02;
+    padding: 20px 0;
+  }
+
+  .footer-content {
+    padding-left: 100px;
+  }
